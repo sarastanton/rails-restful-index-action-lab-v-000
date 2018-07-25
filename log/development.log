@@ -290,3 +290,15 @@ AbstractController::ActionNotFound (The action 'students' could not be found for
 
 
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.2ms)
+
+
+Started GET "/students" for 72.182.20.29 at 2018-07-25 07:02:02 +0000
+Processing by StudentController#students as HTML
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template student/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/sarastanton/rails-restful-index-action-lab-v-000/app/views"
+):
+  app/controllers/student_controller.rb:5:in `students'
+
+
